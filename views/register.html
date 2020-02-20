@@ -1,0 +1,143 @@
+<!-- Registration Page -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="" name="description">
+    <title>Register Page</title>
+    <link href='../resources/img/favicon.ico' rel='icon' type='image/x-icon'/>
+    <!-- Bootstrap core CSS -->
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" rel="stylesheet">
+    <link href="../resources/css/my_style.css" rel="stylesheet">
+</head>
+
+<body>
+<img alt="Registration Page Banner for CU Football" class="img-fluid" src="../resources/img/beproudcapaabanner.jpg">
+<br>
+<br>
+<div class="container">
+    <form action="home.html">
+        <!--
+            Todo: Create a form with the following fields:
+                1. Name Text Field
+                2. Email Text Field
+                3. Password Text Field
+                4. Password Confirmation Text Field
+                5. Email Text Field
+                6. CU Boulder Alumni Radio Button
+                7. CU Boulder Student Radio Button
+                8. CU Boulder Undergrad/Grad Radio Button
+                9. Undergraduate Select (Freshman-Senior)
+                10. Graduate Select (MA, MBA, PhD)
+                11. Submit Button (links to home page)
+
+        -->
+        <div class="container">
+
+            <div class="row" style="font-size: 20px">
+                <div class="col-2">
+                    <label class="pb-4">Full Name:</label>
+                    <label class="pb-4">Email address:</label>
+                    <label class="pb-4">Password:</label>
+                    <label class="pb-4">Confirm Password:</label>
+
+                </div>
+                <div class="col-10">
+                    <input class="form-control input-lg mb-4" name="fullname_field" placeholder="Enter Name"
+                           type="text">
+                    <input class="form-control input-lg mb-4" name="email_field" placeholder="john@colorado.edu"
+                           type="email">
+                    <input class="form-control align-middle mb-4" name="pw_field" type="password">
+                    <input class="form-control align-middle mb-4" name="pw_cfm_field" type="password">
+                </div>
+            </div>
+            <div class="row mb-4" style="font-size: 20px">
+                <div class="col-2">
+                    <label class="pb-4">CUB Alumni:</label>
+
+                </div>
+                <div class="col-10">
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="exampleRadios" value="Yes" >
+						<label class="form-check-label">
+							Yes
+						</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" value="No">
+						<label class="form-check-label">
+							No
+						</label>
+					</div>
+                </div>
+            </div>
+            <div class="row mb-4" style="font-size: 20px">
+                <div class="col-2">
+                    <label>CUB Student:</label>
+                </div>
+				<div class="col-10">
+					<div class="form-check" >
+						<input class="form-check-input" type="radio" name="exampleRadios" value="Yes" >
+						<label class="form-check-label">
+							Yes
+						</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" value="No">
+						<label class="form-check-label">
+							No
+						</label>
+					</div>
+				</div>
+            </div>
+			<div class="row mb-5" style="font-size: 20px">
+				<div class="col-2">
+					<label>Student Status</label>
+				</div>
+				<div class="col-10">
+					<div class="form-check" >
+						<input class="form-check-input" type="radio" name="exampleRadios" value="Undergraduate" >
+						<label class="form-check-label">
+							Undergraduate
+						</label>
+					</div>
+					<select name="select_choice">
+						<option selected>Select Student Status</option>
+						<option value="1">Freshman</option>
+						<option value="2">Sophomore</option>
+						<option value="3">Junior</option>
+						<option value="4">Senior</option>
+					</select>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" value="Graduate">
+						<label class="form-check-label">
+							Graduate
+						</label>
+
+					</div>
+					<select name="select_choice">
+						<option selected>Select Student Status</option>
+						<option value="1">MA</option>
+						<option value="2">MBA</option>
+						<option value="3">PhD</option>
+					</select>
+				</div>
+			</div>
+        </div>
+
+        <input class="btn btn-primary btn-block" type="submit" value="submit">
+    </form>
+</div>
+<script crossorigin="anonymous"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</body>
+</html>
